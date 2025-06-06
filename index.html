@@ -3,24 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>revisão formulários HTML5</title>
+    <title>Revisão Formulários HTML5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css " rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 <body>
     <form>
-        <label for="texto">campo de texto</label>
-        <input type="text" id="texto"><br/>
-        <label for="numero">campo de número</label>
-        <input type="number" id="numero"><br/>
-        <label for="data">campo de data</label>
-        <input type="date" id="data"><br/>
-        <label for="cor">campo de cor</label>
-        <input type="color" id="cor">
-        <label for="check">caixa de checagem</label>
-        <input type="checkbox" id="check">
-        <label for="intervalo">campo de intervalo</label>
-        <input type="range" id="intervalo"><br/>
-        <label for="senha">campo de senha</label>
-        <input type="password" id="senha">
+        <label for="texto">Campo de texto</label>
+        <input type="text" id="texto" required><br/>
+        <label for="numero">Campo de número</label>
+        <input type="number" id="numero" min="0" max="100" required><br/>
+        <label for="data">Campo de data</label>
+        <input type="date" id="data" required><br/>
+        <label for="cor">Campo de cor</label>
+        <input type="color" id="cor" required><br/>
+        <label for="check">Caixa de Checagem</label>
+        <input type="checkbox" id="check" required><br/>
+        <label for="intervalo">Campo de Intervalo</label>
+        <input type="range" id="intervalo" required><br/>
+        <label for="senha">Campo de Senha</label>
+        <input type="password" id="senha" required><br/>
+        <input type="button" value="Sem ação"><br/>
+        <input type="submit" value="Enviar"><br/>
+        <input type="reset" value="Limpar"><br/>
+        <input type="text" id="outroTexto" placeholder="Não clique aqui!" readonly><br/>
+        <label for="masc">Masculino</label>
+        <input type="radio" id="masc" name="sexo" checked><br/>
+        <label for="fem">Feminino</label>
+        <input type="radio" id="fem" name="sexo"><br/>
+        <label for="telefone">Campo de Telefone</label>
+        <input type="tel" id="telefone" pattern="[0-9]{2}-[0-9]{1}-[0-9]{4}-[0-9]{4}">
+    <label for="estados">selecione um estado:</label>
+    <select id="estados">
+        <option selected>PR</option>
+        <option>SC</option>
+        <option>RS</option>
+    </select>
     </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js " integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
